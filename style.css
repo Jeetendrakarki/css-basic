@@ -1,0 +1,49 @@
+body {
+  font-size: 32px;
+  margin: 0;
+}
+
+.parent {
+  background: blue;
+  padding: 10px;
+  /* flex */
+  display: flex;
+  /* manage the boxes in full length */
+  justify-content: space-around;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.parent > div {
+  background: gray;
+  margin: 10px;
+  width: 70px;
+  height: 70px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.parent>div:nth-child(even){
+    background: red;
+}
+
+.item-4{
+    align-self: flex-start;
+}
+
+
+.item-6{
+    align-self: flex-end;
+}
+
+.item-8{
+    order: -1;
+}
+
+.item-3{
+    order: 1;
+}
+
